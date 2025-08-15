@@ -1,63 +1,64 @@
-# Đồ án 2 - Decision Tree - Môn Cở sở trí tuệ nhân tạo
+# Decision Tree - Introduction to Artificial Intelligence
 
-## Mô tả đồ án
+## Project Description
 
-Dự án này thực hiện phân tích dữ liệu, tiền xử lý và xây dựng mô hình dự đoán trên ba bộ dữ liệu:
-- **Bank Marketing** ([bank/](bank/)): Dự đoán khách hàng có đăng ký tiền gửi có kỳ hạn không.
-- **Heart Disease** ([heart+disease/](heart+disease/)): Dự đoán nguy cơ mắc bệnh tim.
-- **Penguins** ([penguins/](penguins/)): Phân loại loài chim cánh cụt.
+This project involves data analysis, preprocessing, and building predictive models on three datasets:
+- **Bank Marketing** ([bank/](bank/)): Predict whether a customer will subscribe to a term deposit.
+- **Heart Disease** ([heart+disease/](heart+disease/)): Predict the risk of heart disease.
+- **Penguins** ([penguins/](penguins/)): Classify penguin species.
 
-Các notebook chính:
-- [bank.ipynb](bank.ipynb): Xử lý và dự đoán trên bộ dữ liệu Bank.
-- [heart_disease.ipynb](heart_disease.ipynb): Xử lý và dự đoán trên bộ dữ liệu Heart Disease.
-- [penguins.ipynb](penguins.ipynb): Xử lý và dự đoán trên bộ dữ liệu Penguins.
+**See detailed description in the report:** [Detailed Report](https://drive.google.com/file/d/1gtpDaFVN9H-cPqxMGMvzb34SsryGOb7c/view?usp=sharing)
 
-Các hàm tiền xử lý dữ liệu được định nghĩa trong [process.py](process.py).
+### Main Notebooks:
+- [bank.ipynb](bank.ipynb): Processing and prediction on the Bank dataset.
+- [heart_disease.ipynb](heart_disease.ipynb): Processing and prediction on the Heart Disease dataset.
+- [penguins.ipynb](penguins.ipynb): Processing and prediction on the Penguins dataset.
 
-## Yêu cầu
+Data preprocessing functions are defined in [process.py](process.py).
+
+## Requirements
 
 - Python 3.8+
-- Các thư viện trong [requirements.txt](requirements.txt)
+- Libraries listed in [requirements.txt](requirements.txt)
 
-## Cài đặt
+## Installation
 
-1. **Clone repository** (nếu cần):
+1. **Clone the repository** (if needed):
 
     ```sh
     git clone <https://github.com/pqkkkkk/DecisionTree.git>
     cd <DecisionTree>
     ```
-2. **Cài đặt Graphviz về máy tính của bạn**
-- Bạn có thể tải xuống từ [trang chủ Graphviz](https://graphviz.org/download/).
-- Thêm đường dẫn đến thư mục chứa file dot.exe vào biến môi trường PATH của hệ điều hành.
-    Ví dụ trên Windows:
-    - Tải xuống và cài đặt Graphviz.
-    - Thêm đường dẫn đến thư mục `bin` của Graphviz (ví dụ: `C:\Program Files\Graphviz\bin`) vào biến môi trường PATH.
-3. **Cài đặt các thư viện cần thiết:**
+2. **Install Graphviz on your machine**
+- Download from the [Graphviz homepage](https://graphviz.org/download/).
+- Add the path to the folder containing `dot.exe` to your system's PATH environment variable.
+    For example, on Windows:
+    - Download and install Graphviz.
+    - Add the path to the `bin` folder of Graphviz (e.g., `C:\Program Files\Graphviz\bin`) to the PATH environment variable.
+3. **Install required libraries:**
 
     ```sh
     pip install -r requirements.txt
     ```
 
-## Hướng dẫn chạy
+## Usage
 
-1. **Chạy các notebook:**
+1. **Run the notebooks:**
 
-    - Mở từng file notebook (`bank.ipynb`, `heart_disease.ipynb`, `penguins.ipynb`) bằng Jupyter Notebook hoặc Visual Studio Code.
-    - Chạy tuần tự từng cell để thực hiện tiền xử lý, huấn luyện mô hình và đánh giá kết quả.
+    - Open each notebook file (`bank.ipynb`, `heart_disease.ipynb`, `penguins.ipynb`) using Jupyter Notebook or Visual Studio Code.
+    - Execute each cell sequentially to perform preprocessing, train the model, and evaluate results.
 
-2. **Tiền xử lý dữ liệu:**
-    - Các hàm tiền xử lý đã được định nghĩa trong [`penguins_data_preprocessing`](process.py#L30) và [`bank_data_preprocessing`](process.py#L53) ([process.py](process.py)).
-    - Dữ liệu sẽ được tự động xử lý khi chạy các notebook.
+2. **Data Preprocessing:**
+    - Preprocessing functions are defined in [`penguins_data_preprocessing`](process.py#L30) and [`bank_data_preprocessing`](process.py#L53) ([process.py](process.py)).
+    - Data will be automatically processed when running the notebooks.
 
-3. **Kết quả:**
-    - Kết quả mô hình, biểu đồ độ chính xác, ma trận nhầm lẫn sẽ được hiển thị trực tiếp trong notebook.
+3. **Results:**
+    - Model results, accuracy charts, and confusion matrices will be displayed directly in the notebook.
 
-## Thư mục dữ liệu
+## Data Directory Structure
 
-- **bank/**: Chứa dữ liệu ngân hàng.
-- **heart+disease/**: Chứa dữ liệu bệnh tim.
-- **penguins/**: Chứa dữ liệu chim cánh cụt.
+- **bank/**: Contains bank data.
+- **heart+disease/**: Contains heart disease data.
+- **penguins/**: Contains penguin data.
 
-
-> Vui lòng đảm bảo các file dữ liệu gốc nằm đúng vị trí như cấu trúc thư mục để notebook hoạt động chính xác.
+> Please ensure the original data files are placed in the correct directories as shown above for the notebooks to work properly.
